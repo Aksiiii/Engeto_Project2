@@ -78,6 +78,7 @@ def verify(choice):
 
 
 def player(t):
+    # Switches who's turn it is using turn variable
     result = int(t) + 1
     return result
 
@@ -133,7 +134,7 @@ while win_con(game_data) and max_turn > 0:
         if verify(cell):
             cell = int(cell)
             break
-    # Updates game data using user put trough translator function
+    # Updates game data using user input put trough translator function
     game_data[translator(cell)[0]][translator(cell)[1]] += player(turn)
 
 else:
