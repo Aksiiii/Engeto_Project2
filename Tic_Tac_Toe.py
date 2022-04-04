@@ -1,3 +1,6 @@
+'''
+author = Sebastián
+'''
 from textwrap import dedent
 
 
