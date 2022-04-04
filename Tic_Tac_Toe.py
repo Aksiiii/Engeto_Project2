@@ -113,7 +113,7 @@ print(dedent(f"""\
     | 1 | 2 | 3 |
     +---+---+---+
     {SEP_ONE}"""))
-input("Press ENTER to continue")
+input("Press ENTER to continue ")
 print(SEP_TWO,
       "Let's start the game", sep="\n")
 
@@ -133,6 +133,7 @@ while win_con(game_data) and max_turn > 0:
         if verify(cell):
             cell = int(cell)
             break
+    # Updates game data using user put trough translator function
     game_data[translator(cell)[0]][translator(cell)[1]] += player(turn)
 
 else:
